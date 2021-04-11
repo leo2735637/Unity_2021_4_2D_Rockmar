@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 81fc3a2c9ab4f3d4ebe549eec5ee8306
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Barbarian NS
+  fontNames:
+  - Barbarian NS
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 683ebe069efb79941b3b3ebe386c8f9b, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
