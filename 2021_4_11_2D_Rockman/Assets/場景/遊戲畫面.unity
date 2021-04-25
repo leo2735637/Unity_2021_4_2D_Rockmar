@@ -13400,6 +13400,7 @@ GameObject:
   - component: {fileID: 1843607387}
   - component: {fileID: 1843607391}
   - component: {fileID: 1843607390}
+  - component: {fileID: 1843607392}
   m_Layer: 0
   m_Name: "\u73A9\u5BB6"
   m_TagString: Untagged
@@ -13503,8 +13504,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0467, y: -0.093648314}
-  m_Size: {x: 0.64917564, y: 1.2148035}
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 1.2285714, y: 1.4828571}
   m_Direction: 0
 --- !u!50 &1843607391
 Rigidbody2D:
@@ -13527,6 +13528,26 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1843607392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1843607386}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b44a5fc9405375b45ae9d08a84c24b36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10.5
+  jump: 100
+  hp: 100
+  floor: 0
+  bullet: {fileID: 0}
+  Bulletgenerate: {fileID: 0}
+  bulletSpeed: 800
+  Gunshots: {fileID: 0}
 --- !u!1 &1895121940
 GameObject:
   m_ObjectHideFlags: 0
