@@ -10,18 +10,28 @@ public class MenuManager : MonoBehaviour
     //  需要一個公開的方法
     public void StartGame()
     {
+        // 延遲呼叫("方法名稱"，延遲時間)
+        Invoke("DelayStartGame", 1.1f);
+    }
+
+    private void DelayStartGame()
+    {
         //Application.LoadLevel("遊戲畫面"); //綠色蚯蚓：過時的API建議換新的
 
         //場景管理.載入場景("場景名稱")
         SceneManager.LoadScene("遊戲畫面");     //使用【字串】載入
         //SceneManager.LoadScene(1);           //使用【編號】載入
-
     }
 
     /// <summary>
     /// 離開遊戲
     /// </summary>
     public void QuitGame()
+    {
+        Invoke("DelayStaitGame", 1.1f);
+    }
+
+    public void DelayStaitGame()
     {
         //應用程式.離開()
         Application.Quit();
