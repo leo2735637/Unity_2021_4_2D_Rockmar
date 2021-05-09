@@ -13485,7 +13485,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1843607386}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.13, y: -1.35, z: 0}
+  m_LocalPosition: {x: -7.14, y: -1.15, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -13504,8 +13504,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 1.2285714, y: 1.4828571}
+  m_Offset: {x: -0.011723042, y: -0.08792353}
+  m_Size: {x: 0.54862976, y: 1.2015018}
   m_Direction: 0
 --- !u!50 &1843607391
 Rigidbody2D:
@@ -13527,7 +13527,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &1843607392
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13540,14 +13540,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b44a5fc9405375b45ae9d08a84c24b36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10.5
-  jump: 100
+  speed: 600
+  jump: 300
   hp: 100
   floor: 0
   bullet: {fileID: 0}
   Bulletgenerate: {fileID: 0}
   bulletSpeed: 800
   Gunshots: {fileID: 0}
+  groundOffset: {x: -0.19, y: -0.55, z: 0}
+  groundRadius: 0.2
 --- !u!1 &1895121940
 GameObject:
   m_ObjectHideFlags: 0
