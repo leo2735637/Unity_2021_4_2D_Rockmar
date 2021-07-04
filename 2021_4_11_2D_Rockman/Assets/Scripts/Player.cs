@@ -27,6 +27,13 @@ public class Player : MonoBehaviour
     [Header("子彈生成位置")]
     public Vector3 posBullet;
 
+
+    // 靜態  statlc
+    // 1. 靜態欄位重新載入後不會還原為預設值
+    // 2. 靜態欄位不會顯示在屬性面板上  
+    [Header("生命數量")]
+    public static int life = 3;
+
     private AudioSource aud;
     private Rigidbody2D rig;
     private Animator ani;
@@ -36,19 +43,14 @@ public class Player : MonoBehaviour
     /// 紀錄按下左鍵的計時器
     /// </summary>
     private float timer;
-
     /// <summary>
     /// 攻擊力
     /// </summary>
-    private float attack = 10;    
-
-   
-
+    private float attack = 10;
     /// <summary>
     /// 圖片：血條
     /// </summary>
     private Image imgHp;
-
     /// <summary>
     /// 文字：生命
     /// </summary>
@@ -315,11 +317,7 @@ public class Player : MonoBehaviour
         if (hp <= 0) Dead();
     }
 
-    // 靜態  statlc
-    // 1. 靜態欄位重新載入後不會還原為預設值
-    // 2. 靜態欄位不會顯示在屬性面板上  
-    [Header("生命數量")]
-    public static int life = 3;
+    
 
 
     /// <summary>
